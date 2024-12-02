@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/BxNiom/go-pigpio"
+	"github.com/irwin777/go-pigpio"
 )
 
 func main() {

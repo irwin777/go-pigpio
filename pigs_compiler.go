@@ -3,7 +3,7 @@ package pigpio
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/BxNiom/go-pigpio/assets"
+	"github.com/irwin777/go-pigpio/assets"
 	"strings"
 )
 
