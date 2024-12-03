@@ -76,9 +76,10 @@ func (p *Pi) Gpio(bcm BCM) *GpioPin {
 
 func (p *Pi) CurrentTick() (uint, error) {
 	t, err := p.socket.SendCommand(cmdGetTick, 0, 0, nil)
-	if err != nil || t < 0 {
+	tu := uint(t)
+	if err != nil || tu < uint(0) {
 		return 0, newPiError(t, err, "CurrentTick()")
 	}
 
-	return uint(t), nil
+	return tu, nil
 }
